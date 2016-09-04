@@ -1,0 +1,66 @@
+        #content {
+            z-index: 9999;
+            position: relative;
+            margin: auto;
+            /*width: 50%*/
+        }
+        
+        p {
+            background: rgba(0, 0, 0, 0.2);
+            font-family: "Ubuntu Mono", Helvetica, sans-serif;
+            /*font-size: 14px;*/
+            font-size: 3.4em;
+            /*line-height: 20px;*/
+            line-height: 1.1;
+            color: aliceblue;
+        }
+        
+        .say {
+            text-align: center;
+        }
+        
+        img {
+            touch-callout: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -moz-touch-callout: none;
+            -moz-user-select: none;
+        }
+        
+        .box {
+            width: 100vw;
+            height: 100vh;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+        
+        @media screen and (max-width: 320px) and (max-width: 480px) {
+            .box {
+                width: 320px;
+                height: 480px;
+            }
+        }
+        
+        #dot-matrix {
+            background: url(../img/dot.png);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1
+        }
